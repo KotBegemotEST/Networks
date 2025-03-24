@@ -1,0 +1,7 @@
+Koosta Cisco Packet Traceris võrguskeem, mis on kujutatud joonisel 5_7.
+Seadista aadressid ning taga välimise serveri ja kõigi sisemiste serverite kättesaadavus sisemistest tööjaamadest.
+Tööjaamadele tuleb määrata dünaamilised IP-aadressid, kasutades selleks DHCP-serverit, mis tuleb seadistada kolmanda taseme kommutaatorile.
+Välimise serveri aadress vali juhuslikult avaliku aadressiruumi hulgast. Sisemised aadressid vali samuti juhuslikult.
+
+MÄRKUS. Selleks, et kolmanda taseme kommutaatori port lülituks Trunk-režiimi, tuleb kõigepealt lubada desirable-režiim:
+Switch(config-if)#switchport mode dynamic desirable
